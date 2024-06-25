@@ -10,7 +10,7 @@ import Checkbox from '../Components/Checkbox';
 function Login() {
   return (
     <>
-      <main>
+      <main className='bg-black text-white'>
         <div className="absolute inset-0 md:bg-cover-Image bg-center h-135 opacity-35 bg-fixed"></div>
         <Image
             src="/logo.png"
