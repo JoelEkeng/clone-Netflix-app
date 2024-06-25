@@ -107,9 +107,9 @@ const App: React.FC = () => {
       bordered={false}
       expandIconPosition="end"
       destroyInactivePanel={true}
-      expandIcon = {({ isActive }: { isActive?: boolean }) => (
-        <PlusOutlined rotate={isActive ? 50 : 0} style={{ fontSize: '24px', color: 'white' }} />
-      )}
+      expandIcon={({ isActive }: { isActive?: boolean }) => (
+    <PlusOutlined rotate={isActive ? 50 : 0} style={{ fontSize: '24px', color: 'white' }} />
+  )}
       
     >
       {getItems(panelStyle).map((item) => (
