@@ -3,7 +3,8 @@
 import React from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import { Collapse, ConfigProvider } from 'antd';
-import type { CSSProperties} from 'react';
+import type { CollapseProps } from 'antd';
+import type { CSSProperties, Children } from 'react';
 
 const { Panel } = Collapse;
 
@@ -106,9 +107,10 @@ const App: React.FC = () => {
       bordered={false}
       expandIconPosition="end"
       destroyInactivePanel={true}
-      expandIcon={({ isActive }: { isActive: boolean }) => (
+      expandIcon = {({ isActive }: { isActive?: boolean }) => (
         <PlusOutlined rotate={isActive ? 50 : 0} style={{ fontSize: '24px', color: 'white' }} />
       )}
+      
     >
       {getItems(panelStyle).map((item) => (
         <Panel header={item.label} key={item.key} style={item.style}>
