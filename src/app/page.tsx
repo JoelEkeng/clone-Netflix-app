@@ -87,7 +87,7 @@ export default function Home() {
               src={"/popcorn.png"}
               width={480}
               height={400}
-              alt="Kid Image"
+              alt="Download to watch offline Image"
             />
           </div>
           <div className="text-center md:text-start gap-8 max-w-2xl">
