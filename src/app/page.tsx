@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../app/Components/Button";
-import Input from "../app/Components/Input";
 import Divider from "../app/Components/Divider";
 import Collapse from "../app/Components/Collapse";
 import { RightOutlined } from '@ant-design/icons';

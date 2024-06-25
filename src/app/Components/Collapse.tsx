@@ -3,8 +3,7 @@
 import React from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import { Collapse, ConfigProvider } from 'antd';
-import type { CollapseProps } from 'antd';
-import type { CSSProperties, Children } from 'react';
+import type { CSSProperties} from 'react';
 
 const { Panel } = Collapse;
 

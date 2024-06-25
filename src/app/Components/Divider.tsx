@@ -1,3 +1,6 @@
+'use client';
+// Importing Required Libraries
+
 import React from 'react'
 
 function Divider() {
