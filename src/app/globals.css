@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+Input {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #404042;
+    width: 40px;
+    padding: 20px;
+}
+
+ ::placeholder {
+    color: #f9fafb;
+    font-size: 14px;
+}
+
+Button {
+    font-weight: 500;
+}
+
+
+/* Media Queries for Home Div */
+
+@media screen and (min-width: 200px) {
+    .get-started {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    Input {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .get-started {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    Input {
+        width: 400px;
+    }
+}
+
+
+/* Styling for Links in all the Pages */
+
+.custom-link:visited {
+    text-decoration: none;
+}
