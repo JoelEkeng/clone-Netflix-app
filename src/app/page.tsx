@@ -84,7 +84,7 @@ export default function Home() {
         <div className="flex flex-col-reverse items-center gap-y-10 md:flex-row md:justify-center md:gap-x-24">
           <div className="content-center">
           <Image 
-              src={"/popcorn.png"}
+              src={"/Popcorn.png"}
               width={480}
               height={400}
               alt="Download to watch offline Image"
