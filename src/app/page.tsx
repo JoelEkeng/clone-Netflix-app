@@ -9,7 +9,7 @@ import { RightOutlined } from '@ant-design/icons';
 
 export default function Home() {
   return (
-    <main className="font-sans leading-tight">
+    <main className="font-sans bg-black text-white leading-tight">
       <section className="relative bg-fixed">
         <div className="absolute inset-0 bg-cover-Image opacity-35 z-0"></div>
         <header className="relative flex justify-between px-8 py-4 md:px-48 md:py-8 z-10">
@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative flex justify-center items-center">
-          <div className="relative w-[460px] h-[400px] fixed">
+          <div className="relative w-[290px] h-[270px] md:w-[460px] md:h-[400px] fixed">
             <Image
               src="/pngwing.png"
               layout="fill"
@@ -63,7 +63,7 @@ export default function Home() {
               alt="TV frame"
             />
             <video
-              className="absolute top-16 left-5 fixed"
+              className="absolute w-[250px] h-[160px] md:w-[400px] md:h-[280px] top-11 md:top-16 left-3 md:left-5 fixed"
               width="400"
               height="280"
               autoPlay
