@@ -39,9 +39,11 @@ function Login() {
                 </div>
 
                 <div className='mb-2'>
+                  <Link href="/">
                     <Button radius="full" className="bg-red-600 w-full">
                     Sign In
                     </Button>
+                  </Link>
                 </div>
                 <p className='text-center mb-1'>OR</p>
                 <div className='mb-6'>
