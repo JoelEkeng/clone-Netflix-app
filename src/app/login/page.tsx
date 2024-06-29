@@ -39,11 +39,9 @@ function Login() {
                 </div>
 
                 <div className='mb-2'>
-                  <Link href="/">
                     <Button radius="full" className="bg-red-600 w-full">
                     Sign In
                     </Button>
-                  </Link>
                 </div>
                 <p className='text-center mb-1'>OR</p>
                 <div className='mb-6'>
@@ -57,7 +55,7 @@ function Login() {
                 <p>Remeber Me</p>
             </div>
             <div className="flex text-md space-x-2">
-                <p className="text-zinc-400">New to Netflix?</p> <a href="#" className="text-white">Sign up now.</a>
+                <p className="text-zinc-400">New to Netflix?</p> <Link href="/"><p className="text-white">Sign up now.</p></Link> 
             </div>
             <p className='text-sm text-zinc-700'>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
           </form>
