@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.4.2",
     "@prisma/client": "^5.16.1",
     "antd": "^5.18.3",
+    "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "next": "^14.2.4",
     "react": "^18",
